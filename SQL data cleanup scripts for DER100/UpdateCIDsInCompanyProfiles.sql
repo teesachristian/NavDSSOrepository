@@ -1,0 +1,57 @@
+/* Correct a recurring misspelling of Philips Lighting: */
+UPDATE CompanyProfilesFromSF SET "Account Name"='Philips Lighting' 
+WHERE "Account Name" LIKE 'Phillips Lighting'
+
+/* Update companyID for the companies in demoSet, based on Account Name matching */
+UPDATE CompanyProfilesFromSF SET cID=52 WHERE "Account Name" LIKE 'Younicos%';
+UPDATE CompanyProfilesFromSF SET cID=51 WHERE "Account Name" LIKE 'Vivint%';
+UPDATE CompanyProfilesFromSF SET cID=50 WHERE "Account Name" LIKE 'Trina%';
+UPDATE CompanyProfilesFromSF SET cID=49 WHERE "Account Name" LIKE 'Tesla%';
+UPDATE CompanyProfilesFromSF SET cID=48 WHERE "Account Name" LIKE 'Tendril%';
+UPDATE CompanyProfilesFromSF SET cID=47 WHERE "Account Name" LIKE 'Tecogen%';
+UPDATE CompanyProfilesFromSF SET cID=46 WHERE "Account Name" LIKE 'Sunverge%';
+UPDATE CompanyProfilesFromSF SET cID=45 WHERE "Account Name" LIKE 'SunRun%';
+UPDATE CompanyProfilesFromSF SET cID=44 WHERE "Account Name" LIKE 'SunEdison%';
+UPDATE CompanyProfilesFromSF SET cID=43 WHERE "Account Name" LIKE 'STEM%';
+UPDATE CompanyProfilesFromSF SET cID=42 WHERE "Account Name" LIKE 'SolarCity%';
+UPDATE CompanyProfilesFromSF SET cID=41 WHERE "Account Name" LIKE 'Silver Spring Networks%';
+UPDATE CompanyProfilesFromSF SET cID=40 WHERE "Account Name" LIKE 'Siemens%';
+UPDATE CompanyProfilesFromSF SET cID=39 WHERE "Account Name" LIKE 'Schneider Electric%';
+UPDATE CompanyProfilesFromSF SET cID=38 WHERE "Account Name" LIKE 'S&C%electric%';
+UPDATE CompanyProfilesFromSF SET cID=37 WHERE "Account Name" LIKE 'Philips%Lighting%';
+UPDATE CompanyProfilesFromSF SET cID=36 WHERE "Account Name" LIKE 'Philips%Lighting%North%America%';
+UPDATE CompanyProfilesFromSF SET cID=35 WHERE "Account Name" LIKE 'Opower%';
+UPDATE CompanyProfilesFromSF SET cID=34 WHERE "Account Name" LIKE 'Nest Labs%';
+UPDATE CompanyProfilesFromSF SET cID=33 WHERE "Account Name" LIKE 'Mitsubishi%Motors%';
+UPDATE CompanyProfilesFromSF SET cID=32 WHERE "Account Name" LIKE 'Lightsource%Renewable%';
+UPDATE CompanyProfilesFromSF SET cID=31 WHERE "Account Name" LIKE 'Landis%';
+UPDATE CompanyProfilesFromSF SET cID=30 WHERE "Account Name" LIKE 'Johnson Controls%';
+UPDATE CompanyProfilesFromSF SET cID=29 WHERE "Account Name" LIKE 'Itron%';
+UPDATE CompanyProfilesFromSF SET cID=28 WHERE "Account Name" LIKE 'Honeywell%';
+UPDATE CompanyProfilesFromSF SET cID=27 WHERE "Account Name" LIKE 'Honda%';
+UPDATE CompanyProfilesFromSF SET cID=26 WHERE "Account Name" LIKE 'Hawaiian Electric%';
+UPDATE CompanyProfilesFromSF SET cID=25 WHERE "Account Name" LIKE 'GridPoint%';
+UPDATE CompanyProfilesFromSF SET cID=24 WHERE "Account Name" LIKE 'Generac%';
+UPDATE CompanyProfilesFromSF SET cID=23 WHERE "Account Name" LIKE '%Jenbacher%';
+UPDATE CompanyProfilesFromSF SET cID=22 WHERE "Account Name" LIKE 'GE Energy%';
+UPDATE CompanyProfilesFromSF SET cID=21 WHERE "Account Name" LIKE 'Fuji Electric%';
+UPDATE CompanyProfilesFromSF SET cID=20 WHERE "Account Name" LIKE 'Ford%';
+UPDATE CompanyProfilesFromSF SET cID=19 WHERE "Account Name" LIKE 'eVgo%';
+UPDATE CompanyProfilesFromSF SET cID=18 WHERE "Account Name" LIKE 'EnerNOC%';
+UPDATE CompanyProfilesFromSF SET cID=17 WHERE "Account Name" LIKE 'Enel%';
+UPDATE CompanyProfilesFromSF SET cID=16 WHERE "Account Name" LIKE 'Ecobee%';
+UPDATE CompanyProfilesFromSF SET cID=15 WHERE "Account Name" LIKE 'Eaton%';
+UPDATE CompanyProfilesFromSF SET cID=14 WHERE "Account Name" LIKE 'E3/DC%';
+UPDATE CompanyProfilesFromSF SET cID=13 WHERE "Account Name" LIKE 'E.ON%';
+UPDATE CompanyProfilesFromSF SET cID=12 WHERE "Account Name" LIKE 'Cummins%';
+UPDATE CompanyProfilesFromSF SET cID=11 WHERE "Account Name" LIKE 'Comverge%';
+UPDATE CompanyProfilesFromSF SET cID=10 WHERE "Account Name" LIKE 'Clean Energy Collective%';
+UPDATE CompanyProfilesFromSF SET cID=9 WHERE "Account Name" LIKE 'Caterpillar Inc%';
+UPDATE CompanyProfilesFromSF SET cID=8 WHERE "Account Name" LIKE 'Caterpillar Energy Solutions%' OR "Account Name" LIKE '%MWM%';
+UPDATE CompanyProfilesFromSF SET cID=7 WHERE "Account Name" LIKE 'Capstone Turbine%';
+UPDATE CompanyProfilesFromSF SET cID=6 WHERE "Account Name" LIKE '%BMW%';
+UPDATE CompanyProfilesFromSF SET cID=5 WHERE "Account Name" LIKE 'Bloom Energy%';
+UPDATE CompanyProfilesFromSF SET cID=4 WHERE "Account Name" LIKE 'Apple%';
+UPDATE CompanyProfilesFromSF SET cID=3 WHERE "Account Name" LIKE 'Ameresco%';
+UPDATE CompanyProfilesFromSF SET cID=2 WHERE "Account Name" LIKE 'Alstom%';
+UPDATE CompanyProfilesFromSF SET cID=1 WHERE "Account Name" LIKE 'ABB%';

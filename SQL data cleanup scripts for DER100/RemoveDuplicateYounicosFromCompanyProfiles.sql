@@ -1,0 +1,2 @@
+DELETE FROM CompanyProfilesFromSF WHERE "Account Name" = 'Younicos AG' AND reportCODE = 'LB-ESSI-15' AND ID = 1119;
+Select cID, "Account Name", reportCode, "Report Profile Name",ID,Profile FROM CompanyProfilesFromSF ORDER BY cID DESC;

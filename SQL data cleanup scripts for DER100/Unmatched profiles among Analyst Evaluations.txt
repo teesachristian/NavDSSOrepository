@@ -1,0 +1,26 @@
+Of the 204 AnalystEvaluation records in the DER demo set, 12 of them do not have matches among company profiles from SalesForce.
+Details of the unmatched rows are mentioned here.
+
+Report code is erroneous in CompanyProfiles so match can't be made:
+-------------------------------------------------------------------
+13	E.ON SE	Distributed Generation	Dexter	NAGS-15
+39	Schneider Electric SA	Distributed Generation	Dexter	NAGS-15
+
+Company profile is not among those present for the listed report in CompanyProfiles:
+------------------------------------------------------------------------------------
+50	Trina Solar	Distributed Generation	Roberto	DSEG-15
+10	Clean Energy Collective	Distributed Generation	Roberto	DSEG-15
+39	Schneider Electric SA	Demand Response	Brett	CDR-14
+40	Siemens AG	BEMS	Casey	IEMS-15
+41	Silver Spring Networks	Smart Grid	Richelle	SGNC-14
+
+Entire report is missing from CompanyProfiles:
+----------------------------------------------
+20	Ford	Electric Vehicle Integration	Scott	VGI-15
+27	Honda	Electric Vehicle Integration	Scott	VGI-15
+33	Mitsubishi Motors	Electric Vehicle Integration	Scott	VGI-15
+6	BMW	Electric Vehicle Integration	Scott	VGI-15
+
+Company profile has an unmatchable version of company name in CompanyProfiles:
+------------------------------------------------------------------------------
+1	ABB	Smart Grid	Richelle/Lauren	OMS-14  [Profiled as "Ventyx"]

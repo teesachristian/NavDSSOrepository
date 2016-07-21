@@ -90,5 +90,5 @@ UPDATE AnalystEvaluations
 SET rCODE='VGI-15'
 WHERE ReportTitle LIKE '%Vehicle Grid Integration%';
 
-SELECT rCode, ReportTitle FROM AnalystEvaluations
-WHERE ReportTitle LIKE '%Vehicle Grid Integration%';
+--- SELECT rCode, ReportTitle FROM AnalystEvaluations
+--- WHERE ReportTitle LIKE '%Vehicle Grid Integration%';

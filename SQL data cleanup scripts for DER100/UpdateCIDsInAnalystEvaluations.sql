@@ -1,0 +1,57 @@
+/* Correct a recurring misspelling of Philips Lighting: */
+UPDATE AnalystEvaluations SET CompanyName='Philips Lighting' 
+WHERE CompanyName LIKE 'Phillips Lighting'
+
+/* Update companyID for the companies in demoSet, based on Account Name matching */
+UPDATE AnalystEvaluations SET cID=52 WHERE CompanyName LIKE 'Younicos%';
+UPDATE AnalystEvaluations SET cID=51 WHERE CompanyName LIKE 'Vivint%';
+UPDATE AnalystEvaluations SET cID=50 WHERE CompanyName LIKE 'Trina%';
+UPDATE AnalystEvaluations SET cID=49 WHERE CompanyName LIKE 'Tesla%';
+UPDATE AnalystEvaluations SET cID=48 WHERE CompanyName LIKE 'Tendril%';
+UPDATE AnalystEvaluations SET cID=47 WHERE CompanyName LIKE 'Tecogen%';
+UPDATE AnalystEvaluations SET cID=46 WHERE CompanyName LIKE 'Sunverge%';
+UPDATE AnalystEvaluations SET cID=45 WHERE CompanyName LIKE 'SunRun%';
+UPDATE AnalystEvaluations SET cID=44 WHERE CompanyName LIKE 'SunEdison%';
+UPDATE AnalystEvaluations SET cID=43 WHERE CompanyName LIKE 'STEM%';
+UPDATE AnalystEvaluations SET cID=42 WHERE CompanyName LIKE 'SolarCity%';
+UPDATE AnalystEvaluations SET cID=41 WHERE CompanyName LIKE 'Silver Spring Networks%';
+UPDATE AnalystEvaluations SET cID=40 WHERE CompanyName LIKE 'Siemens%';
+UPDATE AnalystEvaluations SET cID=39 WHERE CompanyName LIKE 'Schneider Electric%';
+UPDATE AnalystEvaluations SET cID=38 WHERE CompanyName LIKE 'S&C%electric%';
+UPDATE AnalystEvaluations SET cID=37 WHERE CompanyName LIKE 'Philips%Lighting%';
+UPDATE AnalystEvaluations SET cID=36 WHERE CompanyName LIKE 'Philips%Lighting%North%America%';
+UPDATE AnalystEvaluations SET cID=35 WHERE CompanyName LIKE 'Opower%';
+UPDATE AnalystEvaluations SET cID=34 WHERE CompanyName LIKE 'Nest Labs%';
+UPDATE AnalystEvaluations SET cID=33 WHERE CompanyName LIKE 'Mitsubishi%Motors%';
+UPDATE AnalystEvaluations SET cID=32 WHERE CompanyName LIKE 'Lightsource%Renewable%';
+UPDATE AnalystEvaluations SET cID=31 WHERE CompanyName LIKE 'Landis%';
+UPDATE AnalystEvaluations SET cID=30 WHERE CompanyName LIKE 'Johnson Controls%';
+UPDATE AnalystEvaluations SET cID=29 WHERE CompanyName LIKE 'Itron%';
+UPDATE AnalystEvaluations SET cID=28 WHERE CompanyName LIKE 'Honeywell%';
+UPDATE AnalystEvaluations SET cID=27 WHERE CompanyName LIKE 'Honda%';
+UPDATE AnalystEvaluations SET cID=26 WHERE CompanyName LIKE 'Hawaiian Electric%';
+UPDATE AnalystEvaluations SET cID=25 WHERE CompanyName LIKE 'GridPoint%';
+UPDATE AnalystEvaluations SET cID=24 WHERE CompanyName LIKE 'Generac%';
+UPDATE AnalystEvaluations SET cID=23 WHERE CompanyName LIKE '%Jenbacher%';
+UPDATE AnalystEvaluations SET cID=22 WHERE CompanyName LIKE 'GE Energy%';
+UPDATE AnalystEvaluations SET cID=21 WHERE CompanyName LIKE 'Fuji Electric%';
+UPDATE AnalystEvaluations SET cID=20 WHERE CompanyName LIKE 'Ford%';
+UPDATE AnalystEvaluations SET cID=19 WHERE CompanyName LIKE 'eVgo%';
+UPDATE AnalystEvaluations SET cID=18 WHERE CompanyName LIKE 'EnerNOC%';
+UPDATE AnalystEvaluations SET cID=17 WHERE CompanyName LIKE 'Enel%';
+UPDATE AnalystEvaluations SET cID=16 WHERE CompanyName LIKE 'Ecobee%';
+UPDATE AnalystEvaluations SET cID=15 WHERE CompanyName LIKE 'Eaton%';
+UPDATE AnalystEvaluations SET cID=14 WHERE CompanyName LIKE 'E3/DC%';
+UPDATE AnalystEvaluations SET cID=13 WHERE CompanyName LIKE 'E.ON%';
+UPDATE AnalystEvaluations SET cID=12 WHERE CompanyName LIKE 'Cummins%';
+UPDATE AnalystEvaluations SET cID=11 WHERE CompanyName LIKE 'Comverge%';
+UPDATE AnalystEvaluations SET cID=10 WHERE CompanyName LIKE 'Clean Energy Collective%';
+UPDATE AnalystEvaluations SET cID=9 WHERE CompanyName LIKE 'Caterpillar Inc%';
+UPDATE AnalystEvaluations SET cID=8 WHERE CompanyName LIKE 'Caterpillar Energy Solutions%' OR CompanyName LIKE '%MWM%';
+UPDATE AnalystEvaluations SET cID=7 WHERE CompanyName LIKE 'Capstone Turbine%';
+UPDATE AnalystEvaluations SET cID=6 WHERE CompanyName LIKE '%BMW%';
+UPDATE AnalystEvaluations SET cID=5 WHERE CompanyName LIKE 'Bloom Energy%';
+UPDATE AnalystEvaluations SET cID=4 WHERE CompanyName LIKE 'Apple%';
+UPDATE AnalystEvaluations SET cID=3 WHERE CompanyName LIKE 'Ameresco%';
+UPDATE AnalystEvaluations SET cID=2 WHERE CompanyName LIKE 'Alstom%';
+UPDATE AnalystEvaluations SET cID=1 WHERE CompanyName LIKE 'ABB%';

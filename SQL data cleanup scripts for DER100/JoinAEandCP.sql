@@ -3,21 +3,25 @@ Select Companies.cID as cID_C
 	, AnalystEvaluations.cID as cID_AE
 	, CompanyProfilesFromSF.cID as cID_CP
 	, Companies.companyName as cName_C
+	, Companies.companyNameNow as cNameNow
+	, Companies.companyNameNotes as cNameNotes
 	, AnalystEvaluations.CompanyName as cName_AE
 	, CompanyProfilesFromSF.[Account Name] as cName_CP
 	, AnalystEvaluations.rCode as rCode_AE
 	, CompanyProfilesFromSF.[NR Report: Report Code] as rCode_CP
-	, NRReportsFromSF.[Report Code] as rCode_NRR
+	, NRReportsFromSF.[NR Report: Report Code] as rCode_NRR
 	, Companies.CompanyURL
 	, Companies.PublicOrPrivate
 	, Companies.irURL
 	, Companies.StockSymbol
+	, Companies.CountryOfCompanyHQ as country_C
+	, CompanyProfilesFromSF.[Billing Country] as country_CP
 	, AnalystEvaluations.MarketSegment
 	, AnalystEvaluations.Vision
 	, AnalystEvaluations.Implementation
 	, AnalystEvaluations.TechInnovation
 	, AnalystEvaluations.TechIntegration
-	, AnalystEvaluations.Total as TotalScore
+	, AnalystEvaluations.TotalScore as TotalScore
 	, AnalystEvaluations.IncumbentOrDisruptor
 	, AnalystEvaluations.LeadingOrNot
 	, AnalystEvaluations.Analyst
@@ -25,10 +29,10 @@ Select Companies.cID as cID_C
 	, CompanyProfilesFromSF.Profile
 	, NRReportsFromSF.[Actual Published Date] as Published_NRR
 	, NRReportsFromSF.Title as NRReportTitle
-	, NRReportsFromSF.[Primary Author: Staff Name] as PrimaryAuthor
-	, NRReportsFromSF."Content Manager: Staff Name" as ContentManager
-	, NRReportsFromSF."Program Area" as ProgramArea
-	, NRReportsFromSF."Research Service" as ResearchService
+	, NRReportsFromSF.[Primary Author] as PrimaryAuthor
+	, NRReportsFromSF.[Content Manager] as ContentManager
+	, NRReportsFromSF.[Program Area] as ProgramArea
+	, NRReportsFromSF.[Research Service] as ResearchService
 FROM 
 	AnalystEvaluations
 --- COMMENT: To include records for company-report pairs that have a company profile 
@@ -44,8 +48,8 @@ FROM
 				OR Companies.cID = CompanyProfilesFromSF.cID)
 		INNER JOIN NRReportsFromSF
 			ON
-				(NRReportsFromSF.[Report Code] = AnalystEvaluations.rCode
-				OR NRReportsFromSF.[Report Code] = CompanyProfilesFromSF.[NR Report: Report Code]) 
+				(NRReportsFromSF.[NR Report: Report Code] = AnalystEvaluations.rCode
+				OR NRReportsFromSF.[NR Report: Report Code] = CompanyProfilesFromSF.[NR Report: Report Code]) 
 WHERE 
 	(CompanyProfilesFromSF.cID is not NULL 
 	OR AnalystEvaluations.cID is not NULL)
